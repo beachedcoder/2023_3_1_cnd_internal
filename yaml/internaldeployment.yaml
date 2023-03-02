@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: demo-api
-        image: your-docker-hub-id/internal:v1.0
+        image: beachcoder/internal:0
         env: 
         - name: SERVICE_PORT
           value: "8082"
