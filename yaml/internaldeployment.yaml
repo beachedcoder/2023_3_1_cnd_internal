@@ -1,7 +1,7 @@
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: demo-api
+  name: demo-api-deployment
 spec: 
   selector:
     matchLabels:
@@ -13,7 +13,7 @@ spec:
         app: demo-api
     spec:
       containers:
-      - name: demo-api
+      - name: demo-api-container
         image: beachcoder/internal:0
         env: 
         - name: SERVICE_PORT
